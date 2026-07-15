@@ -1,0 +1,20 @@
+The equation formula in Python looks like this:
+
+With math module
+```
+import math
+s = b**2 - 4 * a * c
+x = (-(b) + math.sqrt(s)) / (2 * a)
+y = (-(b) - math.sqrt(s)) / (2 * a)
+print(x, y)
+```
+
+Without math module
+```
+s = b**2 - 4 * a * c
+x = (-(b) + (s)**0.5) / (2 * a)
+x = (-(b) - (s)**0.5)) / (2 * a)
+print(x, y)
+```
+
+full-working formula in eqformula.py and calculator example in eqcalc.py
