@@ -1,6 +1,5 @@
 import math
 
-
 def formula():
     s = b**2 - 4 * a * c
     x = (-(b) + math.sqrt(s)) / (2 * a)
