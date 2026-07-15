@@ -6,21 +6,21 @@ eqcalc.geometry("500x400")
 eqcalc.config(bg="#222222")
 
 a_label = tk.Label(eqcalc, text="Enter a:", font=('calibre',12, 'bold'), bg="#222222", fg="#ffffff")
-a_label.pack(padx=5, pady=5)
+a_label.grid(row=0, column=0, padx=5)
 b_label = tk.Label(eqcalc, text="Enter b:", font=('calibre',12, 'bold'), bg="#222222", fg="#ffffff")
-b_label.pack(padx=5, pady=5)
+b_label.grid(row=1, column=0, padx=5)
 c_label = tk.Label(eqcalc, text="Enter c:", font=('calibre',12, 'bold'), bg="#222222", fg="#ffffff")
-c_label.pack(padx=5, pady=5)
+c_label.grid(row=2, column=0, padx=5)
 
 a_entry = tk.Entry(eqcalc, font=('calibre',10,'normal'), bg="#333333", fg="#ffffff")
-a_entry.pack(padx=5, pady=5)
+a_entry.grid(row=0, column=1, padx=5)
 b_entry = tk.Entry(eqcalc, font=('calibre',10,'normal'), bg="#333333", fg="#ffffff")
-b_entry.pack(padx=5, pady=5)
+b_entry.grid(row=1, column=1, padx=5)
 c_entry = tk.Entry(eqcalc, font=('calibre',10,'normal'), bg="#333333", fg="#ffffff")
-c_entry.pack(padx=5, pady=5)
+c_entry.grid(row=2, column=1, padx=5)
 
 result_lbl = tk.Label(eqcalc, text="", font=('calibre', 12, 'normal'), bg="#222222", fg="#ffffff")
-result_lbl.pack(padx=5, pady=5)
+result_lbl.grid(row=3, column=1, padx=10)
 
 def formula():
     a = float(a_entry.get())
@@ -40,6 +40,7 @@ def enter():
         result_lbl.config(text="Error")
 
 enter_btn = tk.Button(eqcalc, command=enter, text="Enter", font=('calibre',12, 'bold'), bg="#222222", fg="#ffffff")
-enter_btn.pack(padx=5, pady=5)
+enter_btn.grid(row=0, column=3, padx=5)
+
 
 eqcalc.mainloop()
