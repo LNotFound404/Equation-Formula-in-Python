@@ -10,7 +10,7 @@ Lightweight with no external dependencies
 Python 3.x
 # Usage
 Clone the repository:
-git clone https://github.com/your-username/equation-formula-in-python.git
+git clone https://github.com/lnotfound404/equation-formula-in-python.git
 Navigate to the project folder:
 cd equation-formula-in-python
 Run the program:
